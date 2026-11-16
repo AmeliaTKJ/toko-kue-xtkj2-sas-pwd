@@ -1,0 +1,193 @@
+/* styles/custom-order.css */
+
+/* --- BANNER HALAMAN CUSTOM ORDER --- */
+.custom-hero {
+  background-color: var(--cokelat-tua);
+  background-image: linear-gradient(rgba(78, 52, 46, 0.85), rgba(85, 107, 47, 0.85)), 
+                    url('../assets/images/hero/background-bakery.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--putih);
+  text-align: center;
+  padding: 4.5rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 -4px 0 var(--hijau-sage);
+}
+
+.custom-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--putih);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hero p {
+  font-size: 1.15rem;
+  max-width: 620px;
+  margin: 0 auto;
+  color: #f3ece1;
+}
+
+/* --- TATA LETAK GRID KONTEN --- */
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  background-color: var(--putih);
+  padding: 3rem;
+  border-radius: 16px;
+  border-top: 5px solid var(--hijau-sage);
+  box-shadow: 0 6px 20px rgba(78, 52, 46, 0.08);
+  margin-bottom: 4rem;
+}
+
+/* --- BAGIAN PANDUAN & GAMBAR CONTOH --- */
+.custom-guide h2,
+.custom-form-wrapper h2 {
+  color: var(--cokelat-tua);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.custom-guide h2::after,
+.custom-form-wrapper h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--hijau-sage);
+  margin-top: 0.3rem;
+  border-radius: 2px;
+}
+
+.custom-guide p {
+  color: #5d4037;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.guide-list {
+  margin-left: 1.2rem;
+  color: #4a3b32;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+
+.guide-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.guide-list strong {
+  color: var(--cokelat-tua);
+}
+
+.custom-sample {
+  margin: 0;
+  background-color: var(--krem-lembut);
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #e8e0d5;
+}
+
+.custom-sample img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.custom-sample figcaption {
+  font-size: 0.85rem;
+  color: var(--cokelat-hangat);
+  text-align: center;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+/* --- BAGIAN FORMULIR CUSTOM ORDER --- */
+.custom-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.custom-form .form-group {
+  margin-bottom: 1.15rem;
+}
+
+.custom-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cokelat-tua);
+  margin-bottom: 0.4rem;
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d4c5b9;
+  border-radius: 8px;
+  background-color: #fcfbfa;
+  color: var(--cokelat-tua);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-form input:focus,
+.custom-form select:focus,
+.custom-form textarea:focus {
+  outline: none;
+  border-color: var(--hijau-sage);
+  box-shadow: 0 0 0 3px rgba(85, 107, 47, 0.15);
+  background-color: var(--putih);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--hijau-sage);
+  color: var(--putih);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--cokelat-tua);
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIF UNTUK TABLET & HP --- */
+@media (max-width: 850px) {
+  .custom-grid {
+    grid-template-columns: 1fr;
+    padding: 1.8rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .custom-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .custom-hero {
+    padding: 3.5rem 1rem;
+  }
+
+  .custom-hero h1 {
+    font-size: 2.2rem;
+  }
+}
