@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Enaak - Custom Order</title>
+  <!-- Memanggil global.css terlebih dahulu, kemudian CSS khusus custom-order.css -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/custom-order.css">
+</head>
+<body>
+  <!-- Elemen Semantik: Header & Navigasi -->
+  <header>
+    <a href="../index.html" class="logo">Bakery Enaak</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="pricing.html">Harga</a></li>
+        <li><a href="custom-order.html" class="active">Custom Order</a></li>
+        <li><a href="ingredients.html">Bahan & Alergen</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Elemen Semantik: Main -->
+  <main>
+    <!-- Section Banner Custom Order -->
+    <section class="custom-hero">
+      <h1>Pesan Kue Custom</h1>
+      <p>Wujudkan desain kue impian untuk ulang tahun, pernikahan, atau acara spesial Anda bersama tim baker kami.</p>
+    </section>
+
+    <!-- Section Konten Utama (Panduan & Formulir Custom Order) -->
+    <section class="container">
+      <div class="custom-grid">
+        <!-- Artikel 1: Panduan & Contoh Desain -->
+        <article class="custom-guide">
+          <h2>Ketentuan Pemesanan Custom</h2>
+          <p>Agar hasil kue sesuai dengan harapan Anda, mohon perhatikan ketentuan berikut sebelum mengisi formulir:</p>
+          <ul class="guide-list">
+            <li><strong>Waktu Pemesanan:</strong> Minimal H-3 untuk desain standar dan H-7 untuk kue bertingkat.</li>
+            <li><strong>Pilihan Rasa Dasar:</strong> Double Chocolate, Vanilla Berry, Red Velvet, atau Pandan Keju.</li>
+            <li><strong>Ukuran Tersedia:</strong> Diameter 16 cm, 20 cm, 24 cm, hingga 2 tingkat.</li>
+            <li><strong>Konfirmasi Desain:</strong> Tim kami akan menghubungi Anda via WhatsApp untuk rincian harga akhir.</li>
+          </ul>
+
+          <figure class="custom-sample">
+            <img src="/assets/images/products/custom-cake-products.jpg" alt="Contoh kue ulang tahun custom dengan hiasan krim lembut di atas meja">
+            <figcaption>Contoh hasil kue custom dengan dekorasi krim</figcaption>
+          </figure>
+        </article>
+
+        <!-- Artikel 2: Formulir Pengajuan Custom Order -->
+        <article class="custom-form-wrapper">
+          <h2>Formulir Permintaan Kue</h2>
+          <form action="#" method="POST" class="custom-form">
+            <div class="form-group">
+              <label for="pemesan">Nama Pemesan</label>
+              <input type="text" id="pemesan" name="pemesan" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="whatsapp">Nomor WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 0812345678" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tanggal">Tanggal Acara / Ambil</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+              </div>
+
+              <div class="form-group">
+                <label for="ukuran">Ukuran Kue</label>
+                <select id="ukuran" name="ukuran" required>
+                  <option value="">-- Pilih Ukuran --</option>
+                  <option value="16cm">Diameter 16 cm</option>
+                  <option value="20cm">Diameter 20 cm</option>
+                  <option value="24cm">Diameter 24 cm</option>
+                  <option value="2tier">Kue Bertingkat (2 Tier)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rasa">Pilihan Rasa Base Cake</label>
+              <select id="rasa" name="rasa" required>
+                <option value="">-- Pilih Varian Rasa --</option>
+                <option value="cokelat">Double Chocolate</option>
+                <option value="vanila">Vanilla Berry</option>
+                <option value="red-velvet">Red Velvet Cream Cheese</option>
+                <option value="pandan">Pandan Keju</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="ucapan">Tulisan di Atas Kue</label>
+              <input type="text" id="ucapan" name="ucapan" placeholder="Contoh: Selamat Ulang Tahun ke-17, Dina!">
+            </div>
+
+            <div class="form-group">
+              <label for="catatan">Detail Desain & Warna Tema</label>
+              <textarea id="catatan" name="catatan" rows="4" placeholder="Jelaskan tema warna, karakter, atau catatan alergi bahan..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Pesan Kue Custom Kamu</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Elemen Semantik: Footer Berisi Nama Usaha, Alamat Singkat, dan Tahun -->
+  <footer>
+    <p class="footer-brand"><strong>Bakery Enaak</strong></p>
+    <p class="footer-address">Jl. Dandelion No. 8, Pontianak</p>
+    <p class="footer-copy">&copy; 2026 Bakery Enaak. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
