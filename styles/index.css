@@ -1,0 +1,118 @@
+/* styles/index.css */
+
+/* 1. ANIMASI HERO KEYFRAMES */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* 2. HERO BANNER DENGAN ANIMASI */
+.hero {
+ background-color: var(--cokelat-tua);
+  background-image: linear-gradient(rgba(78, 52, 46, 0.85), rgba(85, 107, 47, 0.85)), 
+                    url('../assets/images/hero/background-bakery.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--putih);
+  text-align: center;
+  padding: 4.5rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 -4px 0 var(--hijau-sage);
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
+.hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--putih);
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
+  color: #fceee3;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out 0.25s forwards;
+}
+
+.hero .btn {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out 0.5s forwards;
+}
+
+/* 3. KATEGORI UNGGULAN (HORIZONTAL 3 KOLOM) */
+.container h2 {
+  text-align: center;
+  color: var(--cokelat-tua);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--hijau-sage);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--putih);
+  padding: 1.8rem;
+  border-radius: 12px;
+  border-top: 4px solid var(--hijau-sage);
+  box-shadow: 0 4px 15px rgba(78, 52, 46, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(85, 107, 47, 0.15);
+  background-color: var(--hijau-muda);
+}
+
+.card h3 {
+  color: var(--cokelat-tua);
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  color: #5d4037;
+  font-size: 0.95rem;
+}
