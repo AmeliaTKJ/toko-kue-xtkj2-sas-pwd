@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Enaak - Kontak</title>
+  <!-- Memanggil global.css terlebih dahulu, kemudian CSS khusus contact.css -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+  <!-- Elemen Semantik: Header & Navigasi -->
+  <header>
+    <a href="../index.html" class="logo">Bakery Enaak</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="pricing.html">Harga</a></li>
+        <li><a href="custom-order.html">Custom Order</a></li>
+        <li><a href="ingredients.html">Bahan & Alergen</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Elemen Semantik: Main -->
+  <main>
+    <!-- Section Banner Kontak -->
+    <section class="contact-hero">
+      <h1>Hubungi Kami</h1>
+      <p>Punya pertanyaan seputar pesanan kue, katering acara, atau saran? Jangan ragu untuk menghubungi kami.</p>
+    </section>
+
+    <!-- Section Konten Utama (Formulir & Informasi Kontak) -->
+    <section class="container">
+      <div class="contact-grid">
+        <!-- Informasi & Alamat Toko -->
+        <article class="contact-info">
+          <h2>Informasi Lokasi & Kontak</h2>
+          <p>Kunjungi toko kami atau hubungi melalui saluran komunikasi di bawah ini:</p>
+          
+          <ul class="info-list">
+            <li><strong>Alamat:</strong> Jl. Dandelion No. 8, Pontianak, Kalimantan Barat</li>
+            <li><strong>Telepon / WhatsApp:</strong> +62 88-88-88</li>
+            <li><strong>Email:</strong> halo@bakeryenaak.com</li>
+            <li><strong>Jam Operasional:</strong> Senin – Minggu (07.00 - 20.00 WIB)</li>
+          </ul>
+        </article>
+
+        <!-- Formulir Pesan / Kritik Saran -->
+        <article class="contact-form-wrapper">
+          <h2>Kirim Pesan</h2>
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan / Pertanyaan</label>
+              <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Kirim Pesan</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Elemen Semantik: Footer Berisi Nama Usaha, Alamat Singkat, dan Tahun -->
+  <footer>
+    <p class="footer-brand"><strong>Bakery Enaak</strong></p>
+    <p class="footer-address">Jl. Dandelion No. 8, Pontianak</p>
+    <p class="footer-copy">&copy; 2026 Bakery Enaak. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
