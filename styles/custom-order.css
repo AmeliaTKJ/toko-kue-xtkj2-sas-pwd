@@ -2,23 +2,23 @@
 
 /* --- BANNER HALAMAN CUSTOM ORDER --- */
 .custom-hero {
-  background-color: var(--cokelat-tua);
+  background-color: var(--dark-brown);
   background-image: linear-gradient(rgba(78, 52, 46, 0.85), rgba(85, 107, 47, 0.85)), 
                     url('../assets/images/hero/background-bakery.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--putih);
+  color: var(--white);
   text-align: center;
   padding: 4.5rem 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: inset 0 -4px 0 var(--hijau-sage);
+  box-shadow: inset 0 -4px 0 var(--green-sage);
 }
 
 .custom-hero h1 {
   font-size: 2.8rem;
   margin-bottom: 0.8rem;
-  color: var(--putih);
+  color: var(--white);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -34,10 +34,10 @@
   display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: 2.5rem;
-  background-color: var(--putih);
+  background-color: var(--white);
   padding: 3rem;
   border-radius: 16px;
-  border-top: 5px solid var(--hijau-sage);
+  border-top: 5px solid var(--green-sage);
   box-shadow: 0 6px 20px rgba(78, 52, 46, 0.08);
   margin-bottom: 4rem;
 }
@@ -45,7 +45,7 @@
 /* --- BAGIAN PANDUAN & GAMBAR CONTOH --- */
 .custom-guide h2,
 .custom-form-wrapper h2 {
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
   font-size: 1.6rem;
   margin-bottom: 1rem;
   position: relative;
@@ -57,7 +57,7 @@
   display: block;
   width: 40px;
   height: 3px;
-  background-color: var(--hijau-sage);
+  background-color: var(--green-sage);
   margin-top: 0.3rem;
   border-radius: 2px;
 }
@@ -81,12 +81,12 @@
 }
 
 .guide-list strong {
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
 }
 
 .custom-sample {
   margin: 0;
-  background-color: var(--krem-lembut);
+  background-color: var(--soft-cream);
   padding: 0.8rem;
   border-radius: 12px;
   border: 1px solid #e8e0d5;
@@ -102,7 +102,7 @@
 
 .custom-sample figcaption {
   font-size: 0.85rem;
-  color: var(--cokelat-hangat);
+  color: var(--warm-brown);
   text-align: center;
   margin-top: 0.6rem;
   font-style: italic;
@@ -123,7 +123,7 @@
   display: block;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
   margin-bottom: 0.4rem;
 }
 
@@ -135,7 +135,7 @@
   border: 1px solid #d4c5b9;
   border-radius: 8px;
   background-color: #fcfbfa;
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
   font-size: 0.95rem;
   font-family: inherit;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -145,16 +145,16 @@
 .custom-form select:focus,
 .custom-form textarea:focus {
   outline: none;
-  border-color: var(--hijau-sage);
+  border-color: var(--green-sage);
   box-shadow: 0 0 0 3px rgba(85, 107, 47, 0.15);
-  background-color: var(--putih);
+  background-color: var(--white);
 }
 
 .btn-submit {
   width: 100%;
   padding: 0.9rem 1.5rem;
-  background-color: var(--hijau-sage);
-  color: var(--putih);
+  background-color: var(--green-sage);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -164,7 +164,7 @@
 }
 
 .btn-submit:hover {
-  background-color: var(--cokelat-tua);
+  background-color: var(--dark-brown);
   transform: translateY(-2px);
 }
 
