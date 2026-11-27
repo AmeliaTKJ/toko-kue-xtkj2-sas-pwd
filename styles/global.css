@@ -2,12 +2,12 @@
 
 /* 1. VARIABEL WARNA & RESET DASAR */
 :root {
-  --cokelat-tua: #4e342e;      /* Cokelat espresso untuk header & footer */
-  --cokelat-hangat: #795548;   /* Cokelat susu untuk aksen */
-  --hijau-sage: #556b2f;       /* Hijau daun/sage untuk garis & tombol */
-  --hijau-muda: #f2f7ef;       /* Hijau pastel lembut */
-  --krem-lembut: #faf6f0;      /* Latar belakang halaman */
-  --putih: #ffffff;
+  --dark-brown: #4e342e;      /* Cokelat espresso untuk header & footer */
+  --warm-brown: #795548;   /* Cokelat susu untuk aksen */
+  --green-sage: #556b2f;       /* Hijau daun/sage untuk garis & tombol */
+  --soft-green: #f2f7ef;       /* Hijau pastel lembut */
+  --soft-cream: #faf6f0;      /* Latar belakang halaman */
+  --white: #ffffff;
 }
 
 /* Mengubah kelas .logo agar otomatis memuat gambar di sebelah kiri teks */
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem; /* Jarak antara logo dan teks */
-  color: var(--putih);
+  color: var(--white);
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
@@ -51,8 +51,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--krem-lembut);
-  color: var(--cokelat-tua);
+  background-color: var(--soft-cream);
+  color: var(--dark-brown);
   line-height: 1.6;
 }
 
@@ -62,18 +62,18 @@ main {
 
 /* 2. Navbar / header (garis hijau & tombol aktif) */
 header {
-  background-color: var(--cokelat-tua);
+  background-color: var(--dark-brown);
   padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 4px solid var(--hijau-sage);
+  border-bottom: 4px solid var(--green-sage);
   box-shadow: 0 2px 10px rgba(78, 52, 46, 0.15);
 }
 
 .logo {
-  color: var(--putih);
+  color: var(--white);
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
@@ -89,7 +89,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--krem-lembut);
+  color: var(--soft-cream);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -100,8 +100,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background-color: var(--hijau-sage);
-  color: var(--putih);
+  background-color: var(--green-sage);
+  color: var(--white);
 }
 
 /* 3. KONTAINER & TOMBOL UMUM */
@@ -113,8 +113,8 @@ nav a.active {
 
 .btn {
   display: inline-block;
-  background-color: var(--hijau-sage);
-  color: var(--putih);
+  background-color: var(--green-sage);
+  color: var(--white);
   padding: 0.85rem 2rem;
   border-radius: 30px;
   text-decoration: none;
@@ -127,23 +127,23 @@ nav a.active {
 }
 
 .btn:hover {
-  background-color: var(--cokelat-hangat);
+  background-color: var(--warm-brown);
   transform: translateY(-2px);
 }
 
 /* 4. footer */
 footer {
-  background-color: var(--cokelat-tua);
-  color: var(--krem-lembut);
+  background-color: var(--dark-brown);
+  color: var(--soft-cream);
   text-align: center;
   padding: 1.8rem 1rem;
-  border-top: 4px solid var(--hijau-sage);
+  border-top: 4px solid var(--green-sage);
   font-size: 0.95rem;
 }
 
 .footer-brand {
   font-size: 1.15rem;
-  color: var(--putih);
+  color: var(--white);
   margin-bottom: 0.3rem;
 }
 

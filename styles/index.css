@@ -23,17 +23,17 @@
 
 /* 2. HERO BANNER DENGAN ANIMASI */
 .hero {
- background-color: var(--cokelat-tua);
+ background-color: var(--dark-brown);
   background-image: linear-gradient(rgba(78, 52, 46, 0.85), rgba(85, 107, 47, 0.85)), 
                     url('../assets/images/hero/background-bakery.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--putih);
+  color: var(--white);
   text-align: center;
   padding: 4.5rem 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: inset 0 -4px 0 var(--hijau-sage);
+  box-shadow: inset 0 -4px 0 var(--green-sage);
   animation: slowZoom 18s ease-in-out infinite alternate;
 }
 
@@ -45,7 +45,7 @@
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 0.8rem;
-  color: var(--putih);
+  color: var(--white);
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
   animation: fadeSlideUp 0.8s ease-out forwards;
 }
@@ -68,7 +68,7 @@
 /* 3. KATEGORI UNGGULAN (HORIZONTAL 3 KOLOM) */
 .container h2 {
   text-align: center;
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
@@ -79,7 +79,7 @@
   display: block;
   width: 60px;
   height: 4px;
-  background-color: var(--hijau-sage);
+  background-color: var(--green-sage);
   margin: 0.5rem auto 0 auto;
   border-radius: 2px;
 }
@@ -92,10 +92,10 @@
 }
 
 .card {
-  background-color: var(--putih);
+  background-color: var(--white);
   padding: 1.8rem;
   border-radius: 12px;
-  border-top: 4px solid var(--hijau-sage);
+  border-top: 4px solid var(--green-sage);
   box-shadow: 0 4px 15px rgba(78, 52, 46, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -103,11 +103,11 @@
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(85, 107, 47, 0.15);
-  background-color: var(--hijau-muda);
+  background-color: var(--soft-green);
 }
 
 .card h3 {
-  color: var(--cokelat-tua);
+  color: var(--dark-brown);
   font-size: 1.25rem;
   margin-bottom: 0.6rem;
 }
